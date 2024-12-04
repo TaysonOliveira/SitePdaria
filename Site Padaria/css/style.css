@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Patrick+Hand&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.logotop{
+    width: 40%;
+    height: 40%;
+}
+
+.backgound-top{
+    
+    width: auto;
+    height: 800px;
+    background-image: url(./background\ paes.jpg);
+    background-size: 2000px
+    background-repeat: no-repeat;
+  
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo a{
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #ae7630;  
+}
+
+.ul{
+    display: flex;
+    align-items: center;
+
+}
+.ul li {
+    margin: 0 40px;
+    font-size: 30px;
+    
+}
+.ul li a{
+    color: #ecd3b4;
+   
+}
+
+/*main*/
+
+main .container{
+    display: flex;
+   
+    margin-top: 40px;
+}
+
+.main-text{
+    width: 800%;
+}
+
+.main-text h1{
+    font-family: "Tinos", serif;
+    color: #f6ba16;
+    font-size: 600%;
+    text-align: center;
+}
+.main-text h2{
+    font-family: "Parisienne", cursive;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    text-align: center;
+}
+.btn{
+   font-size: 20px;
+   border: none;
+   outline: none;
+   padding: 15px;
+   border-radius: 15px;
+   color: #e49534;
+   background-color: #5a2c0e;
+}
+.btn:hover {
+    border-color: #ae7630;           
+    color: #333; 
+}
+.iconeMenu{
+    width: 30%;
+    height: 30%;
+}
+
+/*menu icon*/
+
+.menu-icon{
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+/*resultados*/
+.resultados{
+    background: white;
+}
+.resultados .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resultados-text h2{
+    font-family: "Tinos", serif;
+    color:#5a2c0e;
+    font-size: 500%;
+    text-align: center;
+    margin: 10% 0;
+}
+.resultados-text h3{
+    font-family: "Parisienne", cursive;
+    font-size: 400%;
+    font-style: normal;
+    text-align: center;
+}
+
+section{
+    padding: 20px 0;
+    border-bottom: #5a2c0e;
+}
+
+/*diferenciais*/
+
+.diferenciais .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+}
+.diferenciais .card{
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.diferenciais .card:hover{
+    background-color: #ae7630;
+    box-shadow: 0px 10px 67px 8px;
+}
+.diferenciais .card{
+    width: 60%;
+    height: 60%;
+    justify-content: space-between;
+}
+.diferenciais .card .titulo{
+    margin: 13px 0;
+    font-family: "Tinos", serif;
+    font-weight: 600;
+
+}
+
+.imagem{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+/* reponsivo */
+@media (max-width: 960px){
+    .menu-icon{
+        display: block;
+    }
+    .ul{
+        position: fixed;
+        background-color: #ae7630;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: 0.5s;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .ul li{
+        font-size: 50px;
+        margin: 20px 0;
+    }
+    .ul.ativo{
+        left: 0;
+    }
+}
+main .container{
+    flex-direction: column;
+}
+main .container .main-text{
+    width: 100%;
+    text-align: center;
+}
+main .container .main-text div{
+    justify-content: center;
+}
